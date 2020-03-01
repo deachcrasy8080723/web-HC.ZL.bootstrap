@@ -9,6 +9,9 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <title>bootstrap 網站</title>
 
+    <!--ADS CSS CDN-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!--自己的樣式-->
  <link rel="stylesheet" href="style.css"> 
 
@@ -83,28 +86,30 @@
   </div>
   <!--容器-->
   <div class="container">
-    <h1 class="text-center py-5">關於我</h1>
+    <h1 class="text-center py-5" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine">關於我</h1>
+    <h1 class="text-center py-5" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-linear">關於我</h1>
+
 
     <!--卡片-->
     <div class="card-group">
-      <div class="card border-0 p-2 text-center">
+      <div class="card border-0 p-2 text-center " data-aos=filp-left" >
         <img src="./img/icon1.png" class="card-img-top p-5 icon-style icon-5" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">小標題/h5>
+          <p class="card-text">我是文案,我是文案,我是文案,我是文案,我是文案。</p>
+        </div>
+      </div>
+      <div class="card border-0 p-2 text-center" data-aos=filp-left"  data-delay="100">
+        <img src="./img/icon2.png" class="card-img-top p-5 icon-style icon-5" alt="...">
         <div class="card-body">
           <h5 class="card-title">小標題</h5>
           <p class="card-text">我是文案,我是文案,我是文案,我是文案,我是文案。</p>
         </div>
       </div>
-      <div class="card border-0 p-2 text-center">
-        <img src="./img/icon2.png" class="card-img-top p-5 icon-style icon-5" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">小標題<</h5>
-          <p class="card-text">我是文案,我是文案,我是文案,我是文案,我是文案。</p>
-        </div>
-      </div>
-      <div class="card border-0 p-2 text-center">
+      <div class="card border-0 p-2 text-center" data-aos=filp-left"  data-delay="200">
         <img src="./img/icon3.png" class="card-img-top p-5 icon-style icon-5" alt="...">
         <div class="card-body">
-          <h5 class="card-title">小標題<</h5>
+          <h5 class="card-title">小標題</h5>
           <p class="card-text">我是文案,我是文案,我是文案,我是文案,我是文案。</p>
         </div>
       </div>
@@ -122,6 +127,7 @@
         </div>
 
         <div class="col-sm-12 col-md-12 col-lg-9">
+
           <div class="content-box d-inline-flex">
             <img src="./img/icon1-content1.png" alt=""class="p-2 icon-style icon-4">
             <div class="p-3">
@@ -153,8 +159,8 @@
    <div class="container-fluid bg-light py-5 text-center border-top">
 <div>
   <img src="./img/icon1-content1.png" alt="">
-  <img src="./img/icon1-content1.png" alt="">
-  <img src="./img/icon1-content1.png" alt="">
+  <img src="./img/icon1-content2.png" alt="">
+  <img src="./img/icon1-content3.png" alt="">
 </div>
 <div class="p-3">
   &copy;klien 2020.
@@ -173,6 +179,13 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+    <!--ADS JS CDN-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 
 </html>
